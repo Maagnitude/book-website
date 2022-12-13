@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to BookAdict</title>
+    <link rel = "stylesheet" href= "style.css">
+    <link rel="icon" href="imageforthesite.jpg">
+</head>
+<body>
+    <ul class = "tabs">
+        <li data-tab-target="#search" class= "active tab" >Search</li>
+        <li data-tab-target="#register" class="tab">Register</li>
+    </ul>
+    <div class="tab-content">
+        <div id= "search" data-tab-content class="active">
+            <div class = "search"><h1> Search for a book</h1></div>
+            <div class = "main">
+                <form>
+                    <h2 class = "name">Keyword</h2>
+                    <input class = "title" type = "text" id = "getBookByKeyword" name = "title" placeholder="Enter a keyword, or just press 'Search' to get all the books...">
+                    <input class = "button" type = "button" value="Search" onclick="document.getElementById('bookArea').style.visibility='visible'" id = "searchBook">
+                </form>
+            </div>
+            <div class = "bookArea" id="bookArea">
+                <table class = "bookTable">
+                    <thead class = "bookHead">
+                        <tr>
+                            <th>ID</th>
+                            <th>Author</th>
+                            <th>Title</th>
+                            <th>Genre</th>
+                            <th>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody class = "bookBody" id = "bookTable">
+                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td></tr>    
+                    </tbody>  
+                </table>
+            </div> 
+        </div> 
+        <div id = "register" data-tab-content>
+            <div class = "register"><h1> Register a book</h1></div>
+            <div class = "main">
+                <form>
+                    <div id = "authorname">
+                        <h2 class = "name">Author's name</h2>
+                        <input class = "authorname" type = "text" id = "rb_bookAuthor" name = "authorname" placeholder="Fullname"><br>
+                    </div>
+                    <h2 class = "name">Title</h2>
+                    <input class = "title" type = "text" id = "rb_bookTitle" name = "title" placeholder="Book's title">
+
+                    <h2 class = "name">Genre</h2>
+                    <select class = "genre"  id = "rb_bookGenre" name = "Genre">
+                        <option disabled = "disabled" selected = "selected">-Choose a genre-</option>
+                        <option> Science Fiction</option>
+                        <option> Satire</option>
+                        <option> Drama</option>
+                        <option> Action and Adventure</option>
+                        <option> Romance</option>
+                        <option> Mystery</option>
+                        <option> Horror</option>
+                    </select>
+                    <h2 class = "name">Price</h2>
+                    <input class = "price" type = "text" id = "rb_bookPrice" name = "price" placeholder="0.0">
+                    <label class = "pricelabel">€</label>
+                    <input class = "button" type = "button" value="Register" id = "registerBook">
+                </form>
+            </div>
+            <div class = "bookAreaReg" id="bookAreaReg"></div>
+        </div>
+    </div>
+</body>
+<script src = "frontend.js" defer></script>
+</html>

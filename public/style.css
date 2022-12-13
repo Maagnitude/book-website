@@ -1,0 +1,254 @@
+body{
+    background-image:url(imageforthesite.jpg);
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.search{
+    width:820px;
+    background-color:rgba(16, 87, 21, 0.4);
+    margin:auto;
+    color:#FFFFFF;
+    padding:10px 0px 10px 0px;
+    text-align:center;
+    border-radius:15px 15px 0px 0px;
+}
+
+.bookArea{
+    height: 570px;
+    width:1200px;
+    background-color:rgba(44, 161, 73, 0.1);
+    margin:auto;
+    color:#9cc39c;
+    padding:10px 0px 10px 0px;
+    text-align:center;
+    border-radius:15px 15px 0px 0px;
+}
+
+.bookAreaReg{
+    height: 70px;
+    width:820px;
+    background-color:rgba(16, 87, 21, 0.4);
+    margin:auto;
+    color:#ffffff;
+    padding:10px 0px 10px 0px;
+    text-align:center;
+    border-radius:15px 15px 0px 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:30px;
+    
+}
+
+.register{
+    width:820px;
+    background-color:rgb(16, 87, 21, 0.4);
+    margin:auto;
+    color:#FFFFFF;
+    padding:10px 0px 10px 0px;
+    text-align:center;
+    border-radius:15px 15px 0px 0px;
+}
+
+.main{
+    background-color: rgb(0,0,0,0.4);
+    border-width: 10px;
+    border-color: rgb(16, 87, 21, 0.4);
+    border-style:ridge;
+    border-radius: 6px;
+    width:800px;
+    margin:auto;
+}
+
+form{
+    padding:10px;
+}
+
+#name{
+    width:100%;
+    height:100px;
+}
+
+.name{
+    margin-left:25px;
+    margin-top:30px;
+    width:150px;
+    color:white;
+    font-size:18px;
+    font-weight:700;
+}
+
+.authorname{
+    position:relative;
+    left:200px;
+    top:-45px;
+    width:480px;
+    line-height:40px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size:16px;
+}
+
+.title{
+    position:relative;
+    left:200px;
+    top:-50px;
+    line-height: 40px;
+    width:480px;
+    border-radius: 6px;
+    padding:0 22px;
+    font-size:16px;
+    color:#555;
+}
+
+.price{
+    position:relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:125px;
+    border-radius: 6px;
+    padding:0 22px;
+    font-size:18px;
+    color:#555;
+}
+
+.pricelabel{
+    position:relative;
+    color:#E5E5E5;
+    font-size:25px;
+    left:203px;
+    top:-37px;
+}
+
+.genre{
+    position:relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:532px;
+    height:40px;
+    border-radius: 6px;
+    padding:0 22px;
+    font-size:16px;
+    color:#555;
+    outline:none;
+    overflow:hidden;
+}
+
+.option option{
+    font-size:18px;
+}
+
+input.button{
+    background-color: #3BAF9F;
+    display:block;
+    position:relative;
+    left: 210px;
+    margin:20px 0px 0px 20px;
+    text-align:center;
+    border-radius: 25px;
+    border:2px solid #366473;
+    padding:14px 110px;
+    outline:none;
+    color:white;
+    cursor:pointer;
+    transition:0.25px;
+    font-size:25px;
+}
+
+button:hover{
+    background-color: #5390F5; 
+}
+
+[data-tab-content] {
+    display:none;
+}
+
+.active[data-tab-content] {
+    display:block;
+}
+
+.tabs{
+    display:flex;
+    justify-content:space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid rgb(16, 87, 21, 0.4);
+
+}
+
+.tab{
+    cursor: pointer;
+    padding: 15px;
+    color:white;
+    font-size:25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tab.active{
+    background-color: #3BAF9F;
+}
+
+.tab:hover {
+    background-color: #5390F5;
+}
+
+.bookTable{
+    border-collapse: collapse;
+    border-radius: 22px;
+    padding:12px 15px;
+    font-size: 24px;
+    min-width: 1200px;
+    position: relative;
+}
+
+.bookTable thead tr{
+    background-color: rgba(28, 52, 30, 0.6);
+    text-align: left;
+    color:white;
+    font-weight: bold;
+    padding:12px 15px;
+    border-left: white;
+
+}
+
+.bookTable th,
+.bookTable td{
+    padding:12px 15px;
+    text-align: left;  
+}
+
+
+.bookTable td{
+    border-right: 1px solid rgba(10, 27, 11, 1);
+}
+
+.bookTable th{
+    border-right: 1px solid rgba(10, 27, 11, 1);
+}
+
+.bookTable tbody tr{
+    border-bottom: 1px solid rgba(10, 27, 11, 1);;
+    color:white;
+    padding:12px 15px;
+    border-left: 1px solid rgba(10, 27, 11, 1);
+}
+
+.bookTable tbody tr:nth-of-type(even){
+    background-color: rgba(22, 87, 84, 0.6);
+}
+
+.bookTable tbody tr:nth-of-type(odd){
+    background-color: rgba(24, 134, 128, 0.6);
+}
+
+.bookTable tbody:last-of-type{
+    border-bottom: 2px solid rgba(28, 52, 30, 0.6);
+    border-left: 2px solid rgba(28, 52, 30, 0.6);
+    border-right: 2px solid rgba(28, 52, 30, 0.6);
+}
